@@ -4,6 +4,7 @@ kind create cluster
 ```
 
 # Install the BYOH provider
+Install the latest `clusterctl` from CAPI's [release artifacts](https://github.com/kubernetes-sigs/cluster-api/releases)
 
 ```shell
 # see what providers are available
