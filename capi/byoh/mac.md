@@ -86,7 +86,8 @@ docker network inspect kind | jq -r 'map(.Containers[].IPv4Address) []'
 ```
 
 Now it is time to generate and apply the cluster template
-*Note:* You may have to disable swap. If you are running this on your laptop locally, please be aware of system level changes.
+
+**Note:** You may have to disable swap. If you are running this on your laptop locally, please be aware of system level changes.
 ```shell
 # generate cluster.yaml
 BUNDLE_LOOKUP_TAG=v1.23.5 CONTROL_PLANE_ENDPOINT_IP=10.10.10.10 clusterctl generate cluster byoh-cluster \
