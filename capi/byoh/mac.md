@@ -22,6 +22,7 @@ We need to have the hosts in place. For that, we will be using docker container 
 ```shell
 # Pull BYOH docker image
 docker pull projects.registry.vmware.com/cluster_api_provider_bringyourownhost/byoh/node/dev:v1.23.5
+docker tag projects.registry.vmware.com/cluster_api_provider_bringyourownhost/byoh/node/dev:v1.23.5 byoh/node:dev
 ```
 
 Let us now create 2 docker containers, because we will need one for the control plane and another for worker
