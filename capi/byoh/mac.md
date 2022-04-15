@@ -24,6 +24,7 @@ We need to have the hosts in place. For that, we will be using docker container 
 git clone git@github.com:vmware-tanzu/cluster-api-provider-bringyourownhost.git
 
 # Build the image using the make task in the repo
+cd cluster-api-provider-bringyourownhost
 make prepare-byoh-docker-host-image-dev
 ```
 
