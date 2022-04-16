@@ -19,6 +19,10 @@ kubectl get pods -A
 # Creating a BYOH workload cluster
 We need to have the hosts in place. For that, we will be using docker container as hosts.
 ```shell
+# clone the repo
+git clone git@github.com:vmware-tanzu/cluster-api-provider-bringyourownhost.git
+cd cluster-api-provider-bringyourownhost
+
 # Build the image using the make task in the repo
 make prepare-byoh-docker-host-image
 ```
